@@ -1,31 +1,82 @@
 /*Секция шапка*/
 .hat{
     background-color: var(--primary-dark-bg);
-    background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4))
-    ,url(../images/hat/hat-background-photo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+
+    background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(/images/hat/hat\ sm.jpg);
+
+    /*Для ретина экрана мобильная версия*/
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+        url(/images/hat/hat\ sm@2x.jpg);
+    }
+
+	@media screen and (min-width: 768px) {
+		background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+        url(/images/hat/hat\ md.jpg);
+
+              /*Для ретина экрана планшетная версия*/
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+          background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+          url(/images/hat/hat\ md@2x.jpg);
+      }
+	}
+
+	@media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+        url(/images/hat/hat\ lg.jpg);
+                /*Для ретина экрана компьютерная версия*/
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+        url(/images/hat/hat\ lg@2x.jpg);
+    }
+	}
+
+
+
+
 
     &__phrase{
 
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
+        font-size: 26px;
+        line-height: 1.62;
+        width: 360px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: var(--primary-dark-txt);
-        width: 696px;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-bottom:30px;
-        
+        color: var(--primary-dark-txt);
+
+        @media screen and (min-width: 1200px) {
+            width: 696px;
+            font-size: 44px;
+            height: 120px;
+        }   
         /*border: 1px solid #000000;*/
         
         }
+
+
 
 }
 

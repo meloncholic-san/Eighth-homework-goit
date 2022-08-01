@@ -1,14 +1,10 @@
 /*Хедер*/
 .header{
+    
     border-bottom: solid 1px #ECECEC;
 }
 
-.header-logo{
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
-}
+
 .header--container{
     display:flex;
     align-items: center;

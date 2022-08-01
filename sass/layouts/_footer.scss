@@ -4,14 +4,51 @@
     background-color: var(--primary-dark-bg);
     padding-bottom: 60px;
     padding-top: 60px;
+
+
     &--logo{
-        margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+    text-align: start;
+    margin-left: 110px;
+	}
+
+	@media screen and (min-width: 1200px) {
+
+        margin-left: 0px;
+        margin-bottom: 0px;
+	}
+
+	}
+
     
     &--wrapper{
+
+
         display: flex;
+        flex-direction: column;
+
+
+        
+	@media screen and (min-width: 768px) {
+
+	}
+
+	@media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
+	}
+
+
+
+
     }
     
+
+
+
 }
 

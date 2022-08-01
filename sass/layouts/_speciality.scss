@@ -4,15 +4,23 @@
 
     &__list{
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
     
     &__item{
-        margin-right: 30px;
-        flex-basis: 270px;
+
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex-basis: 270px;
+        }
+
     }
-    &__item:last-child{
-        margin: 0;
-    }
+
     &__svg{
         display: flex;
         margin-bottom: 30px;
@@ -21,16 +29,19 @@
     &__icon{
         margin: 25px auto;
     }
-    &__list:last-child{
-        margin: 0;
-    }
+
     &__character{
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color:var(--primary-light-txt);
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
     }
     
     &__phrase{
