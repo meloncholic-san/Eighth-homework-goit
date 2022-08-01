@@ -22,7 +22,7 @@
 
 .modal{
     position: absolute;
-
+    z-index: 10000;
     width: 450px;
     height: 609px;
 	@media screen and (min-width: 768px) {

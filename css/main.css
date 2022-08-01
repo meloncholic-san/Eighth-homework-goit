@@ -660,6 +660,7 @@ img {
 
 .modal {
   position: absolute;
+  z-index: 10000;
   width: 450px;
   height: 609px;
   background: white;
@@ -982,13 +983,22 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: auto;
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu-button {
     display: none;
   }
 }
+
 .mobile-menu-button__close {
+  opacity: 0;
+}
+.mobile-menu-button.is-open .mobile-menu-button__close {
+  opacity: 1;
+}
+
+.mobile-menu-button.is-open .mobile-menu__burger {
   opacity: 0;
 }
 
@@ -1009,9 +1019,14 @@ img {
           flex-direction: column;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  z-index: 10;
+  -webkit-transition: -webkit-transform var(--main-animation);
+  transition: -webkit-transform var(--main-animation);
+  transition: transform var(--main-animation);
+  transition: transform var(--main-animation), -webkit-transform var(--main-animation);
 }
 
-.mobile-window .is-open {
+.mobile-window.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
