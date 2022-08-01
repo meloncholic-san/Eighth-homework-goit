@@ -33,6 +33,7 @@
 	}
 
 }
+
 .footer--contacts{
 
     margin-bottom: 60px;
@@ -47,7 +48,13 @@
 
 
     }
+&__list{
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+	text-align: start;
+	}
 
+}
 .item--footer{
     margin-bottom: 9px;
 }
@@ -92,11 +99,6 @@
         @include contacts--type(500,14px,1.14,0.02em);
     
 	}
-
-
-    
- 
-
 }
 &__svg{
     fill: var(--secondary-light-txt);
