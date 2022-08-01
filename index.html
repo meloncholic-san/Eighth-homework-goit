@@ -119,19 +119,43 @@
                 <ul class="projects__list">
                     <li class="projects__item">
                         <div class="projects__item--wrapper">
-                            <img src="./images/about-us/work1.jpg" alt="Первый образец" width="370" height="295">
+                            <picture>
+                                <source 
+                                media="(min-width: 1200px)" 
+                                srcset="./images/about-us/work1.jpg 1x,
+                                ./images/about-us/work1@2x.jpg 2x"
+                                type="image/jpg"
+                                >
+                                <img src="./images/about-us/work1.jpg" alt="Project1" width="370" height="294">
+                            </picture>
                             <p class="projects__description">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="projects__item">
                         <div class="projects__item--wrapper">
-                            <img src="./images/about-us/work2.jpg" alt="Второй образец" width="370" height="295">
+                            <picture>
+                                <source 
+                                media="(min-width: 1200px)" 
+                                srcset="./images/about-us/work2.jpg 1x,
+                                ./images/about-us/work2@2x.jpg 2x"
+                                type="image/jpg"
+                                >
+                                <img src="./images/about-us/work2.jpg" alt="Project2" width="370" height="294">
+                            </picture>
                             <p class="projects__description">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="projects__item">
                         <div class="projects__item--wrapper">
-                           <img src="./images/about-us/work3.jpg" alt="Третий образец" width="370" height="295">
+                            <picture>
+                                <source 
+                                media="(min-width: 1200px)" 
+                                srcset="./images/about-us/work3.jpg 1x,
+                                ./images/about-us/work3@2x.jpg 2x"
+                                type="image/jpg"
+                                >
+                                <img src="./images/about-us/work3.jpg" alt="Project3" width="370" height="294">
+                            </picture>
                            <p class="projects__description">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -148,25 +172,25 @@
                 <h2 class="title crew--title primary--txt--light">Наша команда</h2>
                 <ul class="crew__list">
                     <li class="crew__item">
-                        <picture>
-                            <source 
-                            media="(min-width: 1200px)" 
-                            srcset="./images/our-team/Igor_lg.jpg 1x,
-                            ./images/our-team/Igor_lg.jpg 2x"
-                            type="image/jpg"
-                            >
-                            <source media="(min-width: 768px)" 
-                            srcset="./images/our-team/Igor_md.jpg 1x,
-                            ./images/our-team/Igor_md.jpg 2x"
-                            type="image/jpg"
-                            >
-                            <source media="(max-width: 767px)" 
-                            srcset="./images/our-team/Igor_sm.jpg 1x,
-                            ./images/our-team/Igor_sm.jpg 2x"
-                            type="image/jpg"
-                            >
-                            <img src="./images/our-team/Igor_sm.jpg" alt="Фото Игоря" width="450" height="460">
-                        </picture>
+                            <picture class="crew--picture">
+                                <source 
+                                media="(min-width: 1200px)" 
+                                srcset="./images/our-team/Igor_lg.jpg 1x,
+                                ./images/our-team/Igor_lg@2x.jpg 2x"
+                                type="image/jpg"
+                                >
+                                <source media="(min-width: 768px)" 
+                                srcset="./images/our-team/Igor_md.jpg 1x,
+                                ./images/our-team/Igor_md@2x.jpg 2x"
+                                type="image/jpg"
+                                >
+                                <source media="(max-width: 767px)" 
+                                srcset="./images/our-team/Igor_sm.jpg 1x,
+                                ./images/our-team/Igor_sm@2x.jpg 2x"
+                                type="image/jpg"
+                                >
+                                <img src="./images/our-team/Igor_sm.jpg" alt="Игорь" width="450" height="460">
+                            </picture>
                         <div class="crew__member--wrapper">
                             <h3 class="crew__member primary--txt--light">Игорь Демьяненко</h3>
                             <p class="crew__occupation" lang="en">Product Designer</p>
@@ -203,25 +227,24 @@
                         </ul>
                     </li>
                     <li class="crew__item">
-                        <picture>
+                        <picture class="crew--picture">
                             <source 
                             media="(min-width: 1200px)" 
                             srcset="./images/our-team/Olga_lg.jpg 1x,
-                            ./images/our-team/Olga_lg.jpg 2x"
+                            ./images/our-team/Olga_lg@2x.jpg 2x"
                             type="image/jpg"
                             >
                             <source media="(min-width: 768px)" 
                             srcset="./images/our-team/Olga_md.jpg 1x,
-                            ./images/our-team/Olga_md.jpg 2x"
+                            ./images/our-team/Olga_md@2x.jpg 2x"
                             type="image/jpg"
                             >
                             <source media="(max-width: 767px)" 
                             srcset="./images/our-team/Olga_sm.jpg 1x,
-                            ./images/our-team/Olga_sm.jpg 2x"
+                            ./images/our-team/Olga_sm@2x.jpg 2x"
                             type="image/jpg"
                             >
-
-                            <img src="./images/our-team/Olga_sm.jpg" alt="Фото Ольги" width="450" height="460">
+                            <img src="./images/our-team/Olga_sm.jpg" alt="Ольга" width="450" height="460">
                         </picture>
                         <div class="crew__member--wrapper">
                             <h3 class="crew__member primary--txt--light">Ольга Репина</h3>
@@ -259,24 +282,24 @@
                         </ul>
                     </li>
                     <li class="crew__item">
-                        <picture>
+                        <picture class="crew--picture">
                             <source 
                             media="(min-width: 1200px)" 
                             srcset="./images/our-team/Nikolai_lg.jpg 1x,
-                            ./images/our-team/Nikolai_lg.jpg 2x"
+                            ./images/our-team/Nikolai_lg@2x.jpg 2x"
                             type="image/jpg"
                             >
                             <source media="(min-width: 768px)" 
                             srcset="./images/our-team/Nikolai_md.jpg 1x,
-                            ./images/our-team/Nikolai_md.jpg 2x"
+                            ./images/our-team/Nikolai_md@2x.jpg 2x"
                             type="image/jpg"
                             >
                             <source media="(max-width: 767px)" 
                             srcset="./images/our-team/Nikolai_sm.jpg 1x,
-                            ./images/our-team/Nikolai_sm.jpg 2x"
+                            ./images/our-team/Nikolai_sm@2x.jpg 2x"
                             type="image/jpg"
                             >
-                            <img src="./images/our-team/Nikolai_sm.jpg" alt="Фото Николая" width="450" height="460">
+                            <img src="./images/our-team/Nikolai_sm.jpg" alt="Николай" width="450" height="460">
                         </picture>
                         <div class="crew__member--wrapper">
                             <h3 class="crew__member primary--txt--light">Николай Тарасов</h3>
@@ -314,24 +337,24 @@
                         </ul>
                     </li>
                     <li class="crew__item">
-                        <picture>
+                        <picture class="crew--picture">
                             <source 
                             media="(min-width: 1200px)" 
                             srcset="./images/our-team/Mikhail_lg.jpg 1x,
-                            ./images/our-team/Mikhail_lg.jpg 2x"
+                            ./images/our-team/Mikhail_lg@2x.jpg 2x"
                             type="image/jpg"
                             >
                             <source media="(min-width: 768px)" 
-                            srcset="./images/our-teamMikhaili_md.jpg 1x,
-                            ./images/our-team/Mikhail_md.jpg 2x"
+                            srcset="./images/our-team/Mikhail_md.jpg 1x,
+                            ./images/our-team/Mikhail_md@2x.jpg 2x"
                             type="image/jpg"
                             >
                             <source media="(max-width: 767px)" 
                             srcset="./images/our-team/Mikhail_sm.jpg 1x,
-                            ./images/our-team/Mikhail_sm.jpg 2x"
+                            ./images/our-team//Mikhail_sm@2x.jpg 2x"
                             type="image/jpg"
                             >
-                            <img src="./images/our-team/Mikhail_sm.jpg" alt="Фото Михаила" width="450" height="460">
+                            <img src="./images/our-team/Mikhail_sm.jpg" alt="Михаил" width="450" height="460">
                         </picture>
                         <div class="crew__member--wrapper">
                             <h3 class="crew__member primary--txt--light">Михаил Ермаков</h3>

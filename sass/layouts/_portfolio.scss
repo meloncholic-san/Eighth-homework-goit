@@ -5,9 +5,10 @@
     &-button-list{
 
         display: flex;
-
+        margin-bottom: 40px;
         flex-wrap: wrap;
         @media screen and (min-width: 768px) {
+            margin-bottom: 0;
             margin-bottom: 30px;
             justify-content: center;
         }
@@ -20,20 +21,19 @@
   
 
     }
-
+   
     @media screen and (max-width:767px){
         &-item:nth-child(-n+2){
-            margin-right: 8px;
+
             margin-bottom: 15px;
         }
         }
-    @media screen and (min-width: 768px) {
-        &-item {  
-            margin: 0px;
-            margin-right: 8px;
-        } 
-	}
-
+    &-item{
+        margin-right: 8px;
+    }
+    &-item:last-child{
+        margin: 0;
+    }
     &-button-item{
         font-weight: 500;
         font-size: 16px;
@@ -50,36 +50,59 @@
         cursor: pointer;
         background-color: var(--accent-txt);
         color: #ffffff;
-    
     }
   
- 
 
-
-    
-
-
-
-    &-item:last-child{
-        margin: 0;
-    }
         
     &-list{
+
         display: flex;
-        flex-wrap: wrap;
         gap: 30px;
+        flex-direction: column;
+        
+	@media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+	}
+
+	@media screen and (min-width: 1200px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+	}
+
+
     }
     
     &-list-item{
         border: 1px solid #EEEEEE;
+        max-width: 450px;
+        
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+
+	@media screen and (min-width: 1200px) {
         max-width: 370px;
+
+	}
+
+ 
     }
     
     &-image-wrapper{
         position: relative;
-        width: 370px;
-        height: 294px;
+        width: 450px;
         overflow: hidden;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+    
+        }
     }
     
     &-image-description{
