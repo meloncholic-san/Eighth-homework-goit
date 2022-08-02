@@ -120,3 +120,8 @@
 .active-nav{
     color: var(--accent-txt);
 }
+
+.main-body.no-scroll
+{
+    overflow-y: hidden;
+}
