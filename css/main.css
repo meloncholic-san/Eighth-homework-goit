@@ -248,6 +248,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     position: static;
+    padding-bottom: 40px;
   }
 }
 .socials--footer--caption {
@@ -320,7 +321,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .distribution__caption {
-    padding-top: 14px;
+    padding-top: 2px;
     text-align: start;
   }
 }
@@ -431,6 +432,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts--footer {
+    margin-bottom: 0px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -448,6 +450,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts .footer--contacts {
+    margin-bottom: 0px;
     margin-left: 0px;
   }
 }
@@ -556,8 +559,6 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 @media screen and (min-width: 1200px) {
   .logo {
@@ -576,13 +577,24 @@ img {
 }
 
 .title {
+  font-size: 28px;
+  line-height: 1.17;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  letter-spacing: 0.03em;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
   color: var(--primary-light-txt);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 0px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 /*Navigation*/
@@ -1117,6 +1129,11 @@ img {
   border-bottom: solid 1px #ECECEC;
 }
 
+.header--logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .header--container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1139,15 +1156,6 @@ img {
 /*Команда*/
 .crew {
   background-color: var(--secondary-light-bg);
-}
-.crew--title {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .crew--title {
-    margin-bottom: 0px;
-    margin-bottom: 50px;
-  }
 }
 .crew__list {
   display: -webkit-box;
@@ -1213,9 +1221,6 @@ img {
 }
 
 /*Клиенты*/
-.clients--title {
-  margin-bottom: 50px;
-}
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1326,9 +1331,6 @@ img {
   .projects {
     display: block;
   }
-}
-.projects--title {
-  margin-bottom: 50px;
 }
 .projects__list {
   display: -webkit-box;
@@ -1506,7 +1508,6 @@ img {
   .hat__phrase {
     width: 696px;
     font-size: 44px;
-    height: 120px;
   }
 }
 
@@ -1605,7 +1606,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-list-item {
-    max-width: 370px;
+    width: 370px;
   }
 }
 .portfolio-image-wrapper {

@@ -3,15 +3,7 @@
 .crew{
      background-color: var(--secondary-light-bg);
 
-    &--title{
-    margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
-    margin-bottom: 0px;
-    margin-bottom: 50px;
-	}
 
-       
-    }
     &__list{
          display: flex;
          flex-direction: column;
