@@ -40,17 +40,7 @@
         }
 
     }
-    &--picture{
-        width: 450px;
-        @media screen and (min-width: 768px) {
-            width: 354px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-    
-        } 
-    }
+
     &__member--wrapper{
         padding-top: 30px;
         padding-bottom: 16px;
