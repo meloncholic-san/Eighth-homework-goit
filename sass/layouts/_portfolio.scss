@@ -92,20 +92,26 @@
     
     &-image-wrapper{
         position: relative;
-        width: 450px;
         overflow: hidden;
-
-        @media screen and (min-width: 768px) {
-            width: 354px;
-        }
+        // width: 450px;
+        // @media screen and (min-width: 768px) {
+        //     width: 354px;
+        // }
     
-        @media screen and (min-width: 1200px) {
-            width: 370px;
+        // @media screen and (min-width: 1200px) {
+        //     width: 370px;
     
-        }
+        // }
     }
     
     &-image-description{
+
+        @media screen and (max-width: 479px) {
+            font-size: 16px;
+            line-height: 1.16;
+        }
+
+
         display: flex;
         justify-content: center;
         align-items: center;

@@ -335,6 +335,11 @@ img {
   color: white;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 479px) {
+  .distribution__input {
+    width: 200px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .distribution__input {
     width: 350px;
@@ -1426,42 +1431,42 @@ img {
   background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hat/hat_sm.jpg);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hat/hat_sm.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hat/hat_sm.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hat/hat_sm.jpg);
   /*Для ретина экрана мобильная версия*/
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hat {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hat/hat_sm@2x.jpg);
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hat/hat_sm@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hat/hat_sm@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hat/hat_sm@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hat {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hat/hat_md.jpg);
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hat/hat_md.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hat/hat_md.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hat/hat_md.jpg);
     /*Для ретина экрана планшетная версия*/
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hat {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hat/hat_md@2x.jpg);
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hat/hat_md@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hat/hat_md@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hat/hat_md@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hat {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hat/hat_lg.jpg);
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hat/hat_lg.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hat/hat_lg.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hat/hat_lg.jpg);
     /*Для ретина экрана компьютерная версия*/
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hat {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hat/hat_lg@2x.jpg);
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hat/hat_lg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hat/hat_lg@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hat/hat_lg@2x.jpg);
   }
 }
 .hat__phrase {
@@ -1586,18 +1591,7 @@ img {
 }
 .portfolio-image-wrapper {
   position: relative;
-  width: 450px;
   overflow: hidden;
-}
-@media screen and (min-width: 768px) {
-  .portfolio-image-wrapper {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio-image-wrapper {
-    width: 370px;
-  }
 }
 .portfolio-image-description {
   display: -webkit-box;
@@ -1626,6 +1620,12 @@ img {
   transition: -webkit-transform var(--main-animation);
   transition: transform var(--main-animation);
   transition: transform var(--main-animation), -webkit-transform var(--main-animation);
+}
+@media screen and (max-width: 479px) {
+  .portfolio-image-description {
+    font-size: 16px;
+    line-height: 1.16;
+  }
 }
 .portfolio-list-item:hover .portfolio-image-description {
   -webkit-transform: translateY(0);
